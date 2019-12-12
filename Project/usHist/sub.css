@@ -1,0 +1,403 @@
+/* DEVELOPER Juan Ceballos, IS117-001, Fall 2019 */
+
+@charset "ISO-8859-1";
+
+#nav_menu ul{
+	list-style-type: none;
+	position:relative;
+	margin-top: 0;
+	padding-left:0;
+	margin-bottom: 0;
+}
+
+#nav_menu ul li{
+	float: left;
+	width: 12.5%;
+	padding: 0;
+	margin: 0;
+}
+
+#nav_menu ul li a {
+	border-left: 1px solid #343a40;
+	border-right: 1px solid #343a40;
+	display: block;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+}
+
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+#nav_menu ul ul li{
+	float: none;
+}
+
+#nav_menu ul li:hover > ul{
+	display: block;
+	width: 100%;
+}
+
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#nav_menu li a.current {
+	background-color: #6c757d;
+	border-left: 0px;
+	border-bottom: 2px solid #343a40;
+}
+
+#nav_menu li a.contact {
+	background-color: #343a40;
+	border-bottom: 2px solid #343a40;
+}
+
+#nav_menu li a.US{
+	background-color: #02075d;
+	border-top: 1px solid #343a40;
+	border-bottom: 1px solid #343a40;
+}
+
+#nav_menu li a.USSR{
+	border-top: 1px solid #343a40;
+	border-bottom: 1px solid #343a40;
+}
+
+#nav_menu ul li a.icon{
+	display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+	body{
+		max-width:1140px;
+		font-size:200%;
+	}
+	
+	.card{
+		width:70%;
+		font-size: 120%;
+		margin-left: 5%;
+		max-width:744px;
+	}
+	
+	header h1{
+		text-align: left;
+	}
+	
+	
+	#nav_menu ul li a {
+		font-size: 110%;
+	}
+	
+	#nav_menu ul li:hover > ul{
+		width:100%
+	}
+	
+	footer{
+		max-width:1140px;
+	}
+	
+	.webhead img{
+		max-width:857px;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	body{
+		max-width: 960px;
+		
+	}
+	
+	.card{
+		width:48%;
+		font-size: 110%;
+		margin-left: 5%;
+		max-width: 460px;
+	}
+	
+	header h1{
+		text-align: left;
+	}
+	
+	#nav_menu ul li a {
+		font-size: 100%;
+	}
+	
+	#nav_menu ul li:hover > ul{
+		width:100%
+	}
+	
+	footer{
+		max-width:960px;
+	}
+	
+	.webhead img{
+		max-width:722px;
+	}
+	
+	#textarea{
+		width: 90%;
+		height: 200px;
+	}
+	
+}
+
+@media only screen and (max-width: 960px) {
+	
+	body{
+		max-width: 960px;
+		
+	}
+	
+	.card{
+		width:48%;
+		font-size: 90%;
+		padding-left: 5%;
+		margin-left:5%;
+		max-width: 460px;
+	}
+	
+	header h1{
+		text-align: left;
+	}
+	
+	#nav_menu ul li a {
+		font-size: 90%;
+	}
+	
+	#nav_menu ul li:hover > ul{
+		width:100%
+	}
+	
+	#textarea{
+		width: 90%;
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+	body{
+		max-width: 960px;
+		
+	}
+	
+	.card{
+		
+		font-size: 85%;
+		margin-left: 20%;
+		margin-right:15%;
+		width:60%;
+		max-width: 760px;
+	}
+	
+	header h1{
+		text-align: center;
+	}
+	
+	#nav_menu ul li a {
+		font-size: 80%;
+	}
+	
+	#nav_menu ul li:hover > ul{
+		width:155%
+	}
+	
+	#textarea{
+		width: 90%;
+		height: 150px;
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 425px) {
+	body{
+		max-width: 960px;
+		
+	}
+	
+	.card{
+		
+		font-size: 85%;
+		margin-left: 5%;
+		width:87.5%;
+		max-width: 460px;
+	}
+	
+	header h1{
+		text-align: center;
+	}
+	
+	#textarea{
+		width: 90%;
+		height: 150px;
+	}
+	
+	#nav_menu ul li a{
+		display: none;
+	}
+	
+	#nav_menu.topnav ul li a.icon{
+		float: none;
+		display: block;
+		width: 800%;
+		background-color: #343a40;
+		
+	}
+	
+	#nav_menu ul li a.icon img{
+		padding-left: 75%;
+	}
+	
+	
+}
+
+@media only screen and (max-width: 425px) {
+		
+		#nav_menu.topnav_responsive ul li a{
+		padding-top:2px;
+		padding-bottom:2px;
+		display:block;
+		text-align: center;
+	}
+	
+	#nav_menu.topnav_responsive ul li{
+		float:none;
+		width: 100%;
+	}
+	
+	#nav_menu.topnav_responsive ul li{
+		width: 100%;
+	}
+	
+	
+	#nav_menu.topnav_responsive ul li a.icon{
+		background-color: #343a40;
+	}
+	
+	#nav_menu.topnav_responsive ul li:hover > ul{
+		position:relative;
+		width:100%;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		
+	
+		
+	}
+	
+	
+	
+	
+}
+
+body {
+  border: 3px solid #6c757d;
+  width: 95%;
+  
+  margin-top:25px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #212529;
+  background-color: #fff;
+}
+
+
+header{
+	border-bottom: 3px solid #6c757d;
+	background: linear-gradient(to right, rgba(188,188,188,0.89) 10%,rgba(175,175,175,0.89) 16%,rgba(144,144,144,0.65) 31%,rgba(0,0,0,0) 100%);
+	z-index: 1; 
+}
+
+header a{
+	text-decoration: none;
+	color: black;
+	}
+
+.webhead{
+	height:77px;	
+}
+
+.webhead img{
+	z-index: -1;
+	position: relative;
+	top: -83px;
+	left:25%;
+	right:0;
+	width:75.15%;	
+	
+	
+}
+
+.webhead h1{
+	padding-left: 1.28%;
+	font-family: Courier;
+	font-weight: bold;
+	font-style: italic;
+    margin-top: 0px;
+    padding-top: 25px;
+    padding-bottom: 12px;
+    padding-left: 4%;
+    font-size: 24px;
+}
+
+main{
+	background-image: url('../../Project/usBack.PNG') ;
+	background-repeat: no-repeat;
+	background-attachment: relative;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	background-size: cover;
+	background-position: center bottom
+}
+
+.card{
+	
+	
+	min-width: 140px;
+	border-radius: 25px;
+	border: 2px solid black;
+	
+	padding-left: 8px;
+	background: white;
+}
+
+.card h2{
+	font-style: italic;
+	font-family: Courier;
+}
+
+.card p{
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #343a40;
+}
+
+footer{
+	clear: both;
+
+	background-color: #6c757d;
+	position: fixed;
+	width:95%;
+	bottom: 0;
+	
+}
+
+footer p{
+	color: white;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
